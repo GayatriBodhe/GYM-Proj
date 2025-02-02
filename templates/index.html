@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gym Website</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-  
 </head>
 <body>
   <!-- Header -->
@@ -13,7 +12,7 @@
     <div class="container">
       <!-- Gym Logo and Name -->
       <div class="logo-container">
-        <img src="Kettlebell logo.jpeg" alt="Gym Logo" width="100" height="100" class="gym-logo">
+        <img src="{{ url_for('static', filename='Kettlebell logo.jpeg') }}" alt="Gym Logo" width="100" height="100" class="gym-logo">
         <h1 class="gym-name">Kettlebell </h1>
       </div>
       <!-- Navigation Bar -->
@@ -72,7 +71,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="model_pic.png" alt="Fitness Model">
+      <img src="{{ url_for('static', filename='model_pic.png') }}" alt="Fitness Model">
     </div>
   </section>
 
@@ -81,17 +80,17 @@
     <h2>Why Choose Us?</h2>
     <div class="feature-cards">
       <div class="feature-card">
-        <img src="trainer_pic.png" alt="Trainer">
+        <img src="{{ url_for('static', filename='trainer_pic.png') }}" alt="Trainer">
         <h3>Expert Trainers</h3>
         <p>Get guidance from certified fitness professionals.</p>
       </div>
       <div class="feature-card">
-        <img src="equipment.jpeg" alt="Equipment">
+        <img src="{{ url_for('static', filename='equipment.jpeg') }}" alt="Equipment">
         <h3>Modern Equipment</h3>
         <p>Access modern and safe workout machines.</p>
       </div>
       <div class="feature-card">
-        <img src="gym-diet.jpg" alt="Diet">
+        <img src="{{ url_for('static', filename='gym-diet.jpg') }}" alt="Diet">
         <h3>Personalized Plans</h3>
         <p>Tailor your fitness journey for maximum results.</p>
       </div>
@@ -101,7 +100,7 @@
   <section id="video" class="video-section">
     <h2>Take a Tour of Our Gym</h2>
     <video controls>
-      <source src="GX012098.MP4" type="video/mp4">
+      <source src="{{ url_for('static', filename='GX012098.MP4') }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </section>
@@ -138,6 +137,6 @@
     <p>© 2025 FitTrack. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
